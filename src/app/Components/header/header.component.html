@@ -1,0 +1,70 @@
+<header>
+    <div class="page_head">
+        <div id="nav-container" class="nav-container" style="height: auto;">
+            <nav role="navigation">
+                <div class="container">
+                    <div class="row" style="display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-left">
+                            <div class="logo">
+                                <a routerLink="/home"><img src="../../../assets/images/logo.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 pull-right">
+                          <div class="menu dankovteam-menu-wrapper">
+                          <div class="navbar-collapse collapse" style="display: block;">
+                            <div class="menu-main-menu-container">
+                              <ul>
+                                <li style="cursor: pointer;" *ngFor="let item of NavBar"><a (click)="onNavigate(item.route)">{{item.title}}</a></li>
+                                <!-- <li class="current-menu-item"><a href="#">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contacts.html">Contact</a></li> -->
+                                <!-- <li><a href="#">Pages</a>
+                                  <ul class="sub-menu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="contacts.html">Contact</a></li>
+                                    <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                                    <li><a href="404.html">404 Error</a></li>
+                                    <li><a href="faq.html">F.A.Q</a></li>
+                                    <li><a href="#">Third Level Menu</a>
+                                      <ul class="sub-menu">
+                                        <li><a href="#">Sublevel Title</a></li>
+                                        <li><a href="#">Another Menu</a></li>
+                                        <li><a href="#">And More One</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li> -->
+                                <!-- <li><a href="#">Portfolio</a>
+                                  <ul class="sub-menu">
+                                    <li><a href="portfolio_2.html">2 Columns</a></li>
+                                    <li><a href="portfolio_3.html">3 Columns</a></li>
+                                    <li><a href="portfolio_4.html">4 Columns</a></li>
+                                    <li><a href="portfolio_fullwidth.html">Full Screen</a></li>
+                                    <li><a href="single_portfolio_half.html">Single Portfolio Half</a></li>
+                                    <li><a href="single_portfolio_wide.html">Single Portfolio Wide</a></li>
+                                  </ul>
+                                </li> -->
+                                <!-- <li><a href="#">The Blog</a> -->
+                                  <!-- <ul class="sub-menu">
+                                    <li><a href="blog_classic_fullwidth.html">Classic Fullwidth</a></li>
+                                    <li><a href="blog_classic_sidebar.html">Classic Sidebar</a></li>
+                                    <li><a href="blog_medium_sidebar.html">Medium Sidebar</a></li>
+                                    <li><a href="blog_single.html">Single Fullwidth</a></li>
+                                  </ul> -->
+                                <!-- </li> -->
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+  </header>

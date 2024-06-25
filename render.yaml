@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: angular-ssr-app
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run serve:ssr:seo_app
+    envVars:
+      - key: NODE_ENV
+        value: production
+    regions:
+      - oregon
+    routes:
+      - type: manual
+        src: /
+        dest: http://YOUR_RENDER_SERVICE_URL
